@@ -196,8 +196,8 @@ func artistPage(w http.ResponseWriter, r *http.Request) {
 }
 
 func HandleRequests() {
-	fmt.Println("Starting Server at Port 8080")
-	fmt.Println("now open a broswer and enter: localhost:8080 into the URL")
+	fmt.Println("Starting Server at Port 8888")
+	fmt.Println("now open a broswer and enter: localhost:8888 into the URL")
 	http.HandleFunc("/", homePage)
 	http.HandleFunc("/artistInfo", artistPage)
 	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
